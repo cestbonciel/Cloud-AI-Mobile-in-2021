@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aIq-Pv-dpx">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FvR-T5-ijw">
+            <objects>
+                <navigationController id="aIq-Pv-dpx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="job-eX-s1F">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Vo-Ln-a6z" kind="relationship" relationship="rootViewController" id="Htj-4b-CKy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBv-Ej-eNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-893" y="-67"/>
+        </scene>
+        <!--viewController A-->
+        <scene sceneID="Wp1-fD-cT2">
+            <objects>
+                <viewController id="4Vo-Ln-a6z" customClass="ViewControllerA" customModule="NavigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfD-Ie-JAW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sm-sa-wAr">
+                                <rect key="frame" x="108" y="304" width="177" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="viewController B">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ec-fU-ygx" kind="show" id="2KV-5X-iVs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-cX-19j">
+                                <rect key="frame" x="108" y="440" width="177" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Present Modally">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J0a-9v-rdk" kind="presentation" id="Hfa-7h-R9q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Mk-UY-RaQ"/>
+                        <color key="backgroundColor" red="0.80879682720000001" green="0.86974388380000001" blue="0.96338637230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="viewController A" id="goy-99-Jgx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhE-Yv-Dgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92.36641221374046" y="-68.309859154929583"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FF7-j7-apz">
+            <objects>
+                <viewController id="J0a-9v-rdk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xce-bd-zze">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sUK-Ti-RlZ"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xk-a6-CFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="673"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Ok-x8-8Zz">
+            <objects>
+                <viewController storyboardIdentifier="Orange" id="Uu9-b7-ST7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jF-Ow-Z6U">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orange" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUJ-If-Yir">
+                                <rect key="frame" x="125" y="316" width="142" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ere-Io-sjW"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWs-Rg-I8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078.6259541984732" y="671.83098591549299"/>
+        </scene>
+        <!--viewController B-->
+        <scene sceneID="VSR-RW-7S9">
+            <objects>
+                <viewController title="viewController B" id="2ec-fU-ygx" customClass="ViewControllerB" customModule="NavigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5po-Zv-3F7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANA-mc-bCv">
+                                <rect key="frame" x="122.66666666666669" y="442.66666666666669" width="148" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="viewController C">
+                                    <color key="titleColor" red="0.097727924311926603" green="0.5644232607033639" blue="0.40455370795107032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rf0-8f-4dO" kind="show" id="unG-hI-Fpn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Max-Id-dRJ"/>
+                        <color key="backgroundColor" red="1" green="0.81273333642843693" blue="0.80193730911911743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ANA-mc-bCv" firstAttribute="centerY" secondItem="Max-Id-dRJ" secondAttribute="centerY" id="eDy-y0-GXk"/>
+                            <constraint firstItem="ANA-mc-bCv" firstAttribute="centerX" secondItem="Max-Id-dRJ" secondAttribute="centerX" id="jeb-3l-uAK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C6f-N7-hGt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9q2-CA-mz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="-68"/>
+        </scene>
+        <!--View ControllerC-->
+        <scene sceneID="2qD-62-WnY">
+            <objects>
+                <viewController id="Rf0-8f-4dO" customClass="ViewControllerC" customModule="NavigationControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ey-KH-vkG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-1D-H1s">
+                                <rect key="frame" x="82" y="368" width="229" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="To RootViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actToRootView:" destination="Rf0-8f-4dO" eventType="touchUpInside" id="Y1J-z1-oHK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-w7-gfE">
+                                <rect key="frame" x="82" y="280" width="229" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EAh-il-dOO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actBack:" destination="Rf0-8f-4dO" eventType="touchUpInside" id="ynl-cG-OL6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-Q2-snv">
+                                <rect key="frame" x="82" y="568" width="229" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hlI-bU-iPD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="To Orange">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actToOrange:" destination="Rf0-8f-4dO" eventType="touchUpInside" id="GKE-D1-lN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioZ-r1-Nb3">
+                                <rect key="frame" x="82" y="470" width="229" height="50"/>
+                                <color key="backgroundColor" red="0.81960785390000002" green="0.87058818339999999" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="pop to view B">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actPopTo:" destination="Rf0-8f-4dO" eventType="touchUpInside" id="JKx-1Z-wDM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XBZ-6M-Loa"/>
+                        <color key="backgroundColor" red="0.097727924310000006" green="0.56442326070000004" blue="0.40455370800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IBW-1D-H1s" firstAttribute="leading" secondItem="XBZ-6M-Loa" secondAttribute="leading" constant="82" id="9uE-7h-dj8"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="centerX" secondItem="Ra1-w7-gfE" secondAttribute="centerX" id="G8c-eQ-r8i"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="leading" secondItem="ioZ-r1-Nb3" secondAttribute="leading" constant="-3" id="M8a-EU-0Ov"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="leading" secondItem="Ra1-w7-gfE" secondAttribute="leading" id="TsH-TX-EoE"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="leading" secondItem="XBZ-6M-Loa" secondAttribute="leading" constant="82" id="UCT-Pa-4Mp"/>
+                            <constraint firstItem="IBW-1D-H1s" firstAttribute="centerX" secondItem="Ra1-w7-gfE" secondAttribute="centerX" id="VOh-HP-J3b"/>
+                            <constraint firstItem="Ra1-w7-gfE" firstAttribute="top" secondItem="XBZ-6M-Loa" secondAttribute="top" constant="177" id="awM-kV-Ing"/>
+                            <constraint firstItem="Ra1-w7-gfE" firstAttribute="centerX" secondItem="8Ey-KH-vkG" secondAttribute="centerX" id="bkz-c6-QWL"/>
+                            <constraint firstItem="ioZ-r1-Nb3" firstAttribute="centerX" secondItem="8Ey-KH-vkG" secondAttribute="centerX" constant="1.5" id="cHs-oK-LAI"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="centerX" secondItem="8Ey-KH-vkG" secondAttribute="centerX" id="dBN-F7-E0j"/>
+                            <constraint firstItem="ioZ-r1-Nb3" firstAttribute="centerX" secondItem="Ra1-w7-gfE" secondAttribute="centerX" constant="1.5" id="hdk-wd-lJx"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="centerX" secondItem="8Ey-KH-vkG" secondAttribute="centerX" id="kQD-Ft-Cs3"/>
+                            <constraint firstItem="IBW-1D-H1s" firstAttribute="top" secondItem="Ra1-w7-gfE" secondAttribute="bottom" constant="38" id="mJb-ra-gRn"/>
+                            <constraint firstItem="IBW-1D-H1s" firstAttribute="centerX" secondItem="8Ey-KH-vkG" secondAttribute="centerX" id="oOL-me-mya"/>
+                            <constraint firstItem="6Hg-Q2-snv" firstAttribute="top" secondItem="ioZ-r1-Nb3" secondAttribute="bottom" constant="48" id="p2q-Re-wlB"/>
+                            <constraint firstItem="XBZ-6M-Loa" firstAttribute="bottom" secondItem="6Hg-Q2-snv" secondAttribute="bottom" constant="200" id="yPo-7G-Qto"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VgL-b7-zR2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSh-S8-asy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652.6717557251907" y="-68.309859154929583"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
